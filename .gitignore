@@ -10,6 +10,7 @@ xcuserdata/
 *.xccheckout
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+
 .DS_Store
 build/
 DerivedData/
@@ -41,12 +42,14 @@ DerivedData/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
+
 *.xccheckout
 *.xcworkspace
 !default.xcworkspace
 Pods
 !Podfile
 !Podfile.lock
+
 
 # Carthage
 #
