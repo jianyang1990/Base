@@ -13,6 +13,7 @@
 		752FF2A12465501000F57E79 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A02465501000F57E79 /* BaseView.m */; };
 		752FF2A42465502600F57E79 /* BaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A32465502600F57E79 /* BaseNaviController.m */; };
 		752FF2A72465505100F57E79 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A62465505100F57E79 /* BaseApi.m */; };
+		752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A92465527800F57E79 /* BaseTabBarController.m */; };
 		75A6362124653AC10074B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362024653AC10074B009 /* AppDelegate.m */; };
 		75A6362424653AC10074B009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362324653AC10074B009 /* SceneDelegate.m */; };
 		75A6362724653AC10074B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362624653AC10074B009 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		752FF2A32465502600F57E79 /* BaseNaviController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNaviController.m; sourceTree = "<group>"; };
 		752FF2A52465505100F57E79 /* BaseApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApi.h; sourceTree = "<group>"; };
 		752FF2A62465505100F57E79 /* BaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
+		752FF2A82465527800F57E79 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		752FF2A92465527800F57E79 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		75A6361C24653AC00074B009 /* Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Base.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A6361F24653AC10074B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A6362024653AC10074B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				752FF29D2465500600F57E79 /* BaseController.m */,
 				752FF2A22465502600F57E79 /* BaseNaviController.h */,
 				752FF2A32465502600F57E79 /* BaseNaviController.m */,
+				752FF2A82465527800F57E79 /* BaseTabBarController.h */,
+				752FF2A92465527800F57E79 /* BaseTabBarController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				75A6362124653AC10074B009 /* AppDelegate.m in Sources */,
 				752FF2A12465501000F57E79 /* BaseView.m in Sources */,
 				752FF29E2465500600F57E79 /* BaseController.m in Sources */,
+				752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */,
 				75A6363224653AC20074B009 /* main.m in Sources */,
 				752FF2A72465505100F57E79 /* BaseApi.m in Sources */,
 				752FF29B24654FF400F57E79 /* BaseModel.m in Sources */,
