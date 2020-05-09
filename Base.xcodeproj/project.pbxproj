@@ -199,10 +199,10 @@
 		752FF29224654F6300F57E79 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				752FF29424654F8500F57E79 /* Third */,
-				752FF29324654F7900F57E79 /* Category */,
 				75905CBA246643A000101BDA /* Tools.h */,
 				75905CBB246643A000101BDA /* Tools.m */,
+				752FF29424654F8500F57E79 /* Third */,
+				752FF29324654F7900F57E79 /* Category */,
 			);
 			path = Tools;
 			sourceTree = "<group>";

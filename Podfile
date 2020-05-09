@@ -5,7 +5,6 @@ target 'Base' do
  	
   # Pods for Owner
 
-   pod 'MJExtension'
    pod 'MJRefresh'
    pod 'IQKeyboardManager'
    pod 'SDWebImage'
@@ -13,7 +12,9 @@ target 'Base' do
    pod 'Masonry'
    pod 'MMDrawerController'
    pod 'AFNetworking'
-   pod 'YYModel'
+   pod 'YYKit'
+   pod 'MBProgressHUD', '~> 1.2.0'
+   pod 'pop', '~> 1.0'
 
 end
 
