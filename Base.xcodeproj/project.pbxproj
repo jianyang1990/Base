@@ -14,6 +14,7 @@
 		752FF2A42465502600F57E79 /* BaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A32465502600F57E79 /* BaseNaviController.m */; };
 		752FF2A72465505100F57E79 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A62465505100F57E79 /* BaseApi.m */; };
 		752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A92465527800F57E79 /* BaseTabBarController.m */; };
+		75905CBC246643A000101BDA /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CBB246643A000101BDA /* Tools.m */; };
 		75A6362124653AC10074B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362024653AC10074B009 /* AppDelegate.m */; };
 		75A6362424653AC10074B009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362324653AC10074B009 /* SceneDelegate.m */; };
 		75A6362724653AC10074B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362624653AC10074B009 /* ViewController.m */; };
@@ -52,6 +53,9 @@
 		752FF2A62465505100F57E79 /* BaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
 		752FF2A82465527800F57E79 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		752FF2A92465527800F57E79 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		75905CB8246633DF00101BDA /* SDK-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK-Header.h"; sourceTree = "<group>"; };
+		75905CBA246643A000101BDA /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		75905CBB246643A000101BDA /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		75A6361C24653AC00074B009 /* Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Base.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A6361F24653AC10074B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A6362024653AC10074B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			children = (
 				752FF29424654F8500F57E79 /* Third */,
 				752FF29324654F7900F57E79 /* Category */,
+				75905CBA246643A000101BDA /* Tools.h */,
+				75905CBB246643A000101BDA /* Tools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				75A6362D24653AC20074B009 /* LaunchScreen.storyboard */,
 				75A6363024653AC20074B009 /* Info.plist */,
 				752FF28F24654E0600F57E79 /* PrefixHeader.pch */,
+				75905CB8246633DF00101BDA /* SDK-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -404,6 +411,7 @@
 				752FF29E2465500600F57E79 /* BaseController.m in Sources */,
 				752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */,
 				75A6363224653AC20074B009 /* main.m in Sources */,
+				75905CBC246643A000101BDA /* Tools.m in Sources */,
 				752FF2A72465505100F57E79 /* BaseApi.m in Sources */,
 				752FF29B24654FF400F57E79 /* BaseModel.m in Sources */,
 				752FF2A42465502600F57E79 /* BaseNaviController.m in Sources */,

@@ -8,6 +8,4 @@
 
 #import "Const.h"
 
-@implementation Const
-
-@end
+NSString * const MobileDemo = @"";

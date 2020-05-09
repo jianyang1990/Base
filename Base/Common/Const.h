@@ -6,12 +6,6 @@
 //  Copyright © 2020 mobile. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+UIKIT_EXTERN NSString * const MobileDemo;
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface Const : NSObject
-
-@end
-
-NS_ASSUME_NONNULL_END
