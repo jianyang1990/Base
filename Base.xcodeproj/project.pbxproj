@@ -77,6 +77,7 @@
 		752FF2A62465505100F57E79 /* BaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
 		752FF2A82465527800F57E79 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		752FF2A92465527800F57E79 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		75849E44246A31D70060660E /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
 		75905CB8246633DF00101BDA /* SDK-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK-Header.h"; sourceTree = "<group>"; };
 		75905CBA246643A000101BDA /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		75905CBB246643A000101BDA /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		752FF29324654F7900F57E79 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				75849E44246A31D70060660E /* CategoryHeader.h */,
 				75905CE82466575C00101BDA /* NSArray+Category.h */,
 				75905CE72466575B00101BDA /* NSArray+Category.m */,
 				75905CBE2466575300101BDA /* NSArray+Safe.h */,

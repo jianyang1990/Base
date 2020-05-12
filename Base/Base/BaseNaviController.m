@@ -17,22 +17,23 @@
 //统一设置导航栏
 + (void)load {
     UINavigationBar *bar = [UINavigationBar appearance];
-    bar.barTintColor = [UIColor redColor];
-    [bar setTintColor:[UIColor darkGrayColor]];
-    bar.translucent = YES;
-    [bar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    [bar setShadowImage:[UIImage new]];
+//    bar.barTintColor = [UIColor redColor];
+//    [bar setTintColor:[UIColor darkGrayColor]];
+//    bar.translucent = YES;
+//    [bar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    [bar setShadowImage:[UIImage new]];
+    [bar setBackgroundColor:[UIColor whiteColor]];
+    [bar setTranslucent:NO];
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     // 设置导航栏字体颜色
-    UIColor *naviTitleColor = COLOR(100, 100, 100, 1);
+    UIColor *naviTitleColor = MobileTitleColor;
     attributes[NSForegroundColorAttributeName] = naviTitleColor;
-    attributes[NSFontAttributeName] = [UIFont systemFontOfSize:17];;
+    attributes[NSFontAttributeName] = MobileFont(17);
     bar.titleTextAttributes = attributes;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 

@@ -11,6 +11,7 @@
 
 //头文件
 #import "SDK-Header.h"
+#import "CategoryHeader.h"
 
 //打印
 #ifdef DEBUG
@@ -19,10 +20,7 @@
 #define NSLog(...)
 #endif
 
-/*
-手机型号及UI元素
-*/
-
+//===================== UI元素 =========================
 //获取屏幕 宽度、高度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -44,7 +42,7 @@
 //StatusBar高度
 #define STATUS_BAR_HEIGHT (IS_IPHONE_X_XR_MAX ? 44 : 20)
 
-//bottomBar高度
+//底部高度
 #define BOTTOM_BAR_HEIGHT ((IS_IPHONE_X || IS_IPHONE_XMAX)?34:0)
 
 //顶部高度
@@ -59,12 +57,7 @@
 //屏幕分辨率
 #define SCREEN_RESOLUTION (SCREEN_WIDTH * SCREEN_HEIGHT * ([UIScreen mainScreen].scale))
 
-//状态栏 ＋ 导航栏 高度
-#define STATUS_AND_NAVIGATION_HEIGHT ((STATUSBAR_HEIGHT) + (NAVIGATIONBAR_HEIGHT))
-
-/*
-系统
-*/
+//===================== 手机版本 =========================
 //版本号
 #define IOS_VERSION [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 
@@ -82,9 +75,7 @@
 #define IsPortrait ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait || [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)
 
 
-/*
-颜色
-*/
+//===================== 字体和颜色 =========================
 //带有RGBA的颜色设置
 #define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
@@ -94,9 +85,11 @@
 //16进制颜色
 #define RGB16Color(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-/*
-通知
-*/
+#define MobileFont(a) [UIFont fontWithName:@"PingFang SC" size:a]
+#define MobileSoldFont(a) [UIFont fontWithName:@"PingFangSC-Semibold" size:a]
+#define MobileTitleColor [UIColor hex:@"#454F63"]
+
+//===================== 通知 =========================
 //获取通知中心
 #define NotificationCenter [NSNotificationCenter defaultCenter]
 
@@ -112,9 +105,7 @@
 //NotifacationCenter
 #define kPostNotifacation(name,info) if (![NSThread isMainThread]){dispatch_async(dispatch_get_main_queue(), ^{[[NSNotificationCenter defaultCenter] postNotificationName:name object:info];});}else{[[NSNotificationCenter defaultCenter] postNotificationName:name object:info];}
 
-/*
-数据存储
-*/
+//===================== 数据存储 =========================
 //NSUserDefaults 实例化
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
 
@@ -133,9 +124,7 @@
 //取值
 #define kFetchMyDefault(A) [[NSUserDefaults standardUserDefaults] objectForKey:A]
 
-/*
-单例
-*/
+//===================== 单例 =========================
 #define SingleH(name) +(instancetype)share##name;
 
 #if __has_feature(objc_arc)
@@ -208,15 +197,11 @@ return _instance;\
 }
 #endif
 
-/*
-时间
-*/
+//===================== 时间 =========================
 //获取系统时间戳
 #define CurentTime [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
 
-/*
-权限
-*/
+//===================== 权限 =========================
 //获取相机权限状态
 #define CameraStatus [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]
 #define CameraDenied ((CameraStatus == AVAuthorizationStatusRestricted)||(CameraStatus == AVAuthorizationStatusDenied))
@@ -231,9 +216,7 @@ return _instance;\
 #define PushClose (([[UIDevice currentDevice].systemVersion floatValue]>=8.0f)?(UIUserNotificationTypeNone == [[UIApplication sharedApplication] currentUserNotificationSettings].types):(UIRemoteNotificationTypeNone == [[UIApplication sharedApplication] enabledRemoteNotificationTypes]))
 #define PushOpen (!PushClose)
 
-/*
-函数
-*/
+//===================== 函数 =========================
 //GCD全局队列
 #define GCDGlobalQueue dispatch_get_global_queue(0, 0)
 //GCD主队列
@@ -241,6 +224,7 @@ return _instance;\
 //weakSelf的宏
 #define DefineWeakSelf __weak __typeof(self) weakSelf = self
 
+//===================== 空值判断 =========================
 //字符串是否为空
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 

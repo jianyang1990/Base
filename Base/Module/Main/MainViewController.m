@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "BaseNaviController.h"
 #import "ViewController.h"
 
 @interface MainViewController ()
@@ -17,6 +18,7 @@
 
 @implementation MainViewController
 
+//统一设置TabBar
 + (void)load {
 //    //设置item 普通状态下字体颜色
 //    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
@@ -44,12 +46,13 @@
 }
 
 - (void)addSubViews {
+    
     for (int i = 0; i < self.titles.count; i++) {
         ViewController *vc = [[ViewController alloc] init];
-        vc.tabBarItem.title = self.titles[i];
+        
+        vc.title = self.titles[i];
         vc.tabBarItem.image = [UIImage imageNamed:self.iconNames[i]];
         vc.tabBarItem.selectedImage = [UIImage imageNamed:self.iconSelectedNames[i]];
-
         UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
         [self addChildViewController:navi];
     }
