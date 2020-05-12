@@ -34,7 +34,6 @@
 		75905CFD2466575C00101BDA /* NSMutableString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE22466575B00101BDA /* NSMutableString+Safe.m */; };
 		75905CFE2466575C00101BDA /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE32466575B00101BDA /* NSObject+Category.m */; };
 		75905CFF2466575C00101BDA /* UIMenuItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE42466575B00101BDA /* UIMenuItem+Category.m */; };
-		75905D002466575C00101BDA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE52466575B00101BDA /* UIView+Frame.m */; };
 		75905D012466575C00101BDA /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE62466575B00101BDA /* NSObject+Swizzle.m */; };
 		75905D022466575C00101BDA /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CE72466575B00101BDA /* NSArray+Category.m */; };
 		75905D032466575C00101BDA /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CEA2466575C00101BDA /* NSDictionary+Category.m */; };
@@ -121,14 +120,12 @@
 		75905CE22466575B00101BDA /* NSMutableString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Safe.m"; sourceTree = "<group>"; };
 		75905CE32466575B00101BDA /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		75905CE42466575B00101BDA /* UIMenuItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIMenuItem+Category.m"; sourceTree = "<group>"; };
-		75905CE52466575B00101BDA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		75905CE62466575B00101BDA /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		75905CE72466575B00101BDA /* NSArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
 		75905CE82466575C00101BDA /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
 		75905CE92466575C00101BDA /* UIMenuItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIMenuItem+Category.h"; sourceTree = "<group>"; };
 		75905CEA2466575C00101BDA /* NSDictionary+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Category.m"; sourceTree = "<group>"; };
 		75905CEB2466575C00101BDA /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
-		75905CEC2466575C00101BDA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		75A6361C24653AC00074B009 /* Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Base.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A6361F24653AC10074B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A6362024653AC10074B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -258,8 +255,6 @@
 				75905CDE2466575A00101BDA /* UITableView+CellAnimation.m */,
 				75905CD62466575900101BDA /* UIView+Category.h */,
 				75905CD72466575900101BDA /* UIView+Category.m */,
-				75905CEC2466575C00101BDA /* UIView+Frame.h */,
-				75905CE52466575B00101BDA /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -550,7 +545,6 @@
 				75905CFB2466575C00101BDA /* NSArray+Safe.m in Sources */,
 				752FF2A72465505100F57E79 /* BaseApi.m in Sources */,
 				75905CF02466575C00101BDA /* NSAttributedString+Category.m in Sources */,
-				75905D002466575C00101BDA /* UIView+Frame.m in Sources */,
 				75905D042466575C00101BDA /* UIImage+Category.m in Sources */,
 				752FF29B24654FF400F57E79 /* BaseModel.m in Sources */,
 				752FF2A42465502600F57E79 /* BaseNaviController.m in Sources */,

@@ -20,32 +20,32 @@
 @property (nonatomic, assign, readwrite) CGSize size;
 
 //把View加在Window上
-- (void) addToWindow;
+- (void)addToWindow;
 
 @end
 
 @interface UIView (Screenshot)
 
 //View截图
-- (UIImage*) screenshot;
+- (UIImage*)screenshot;
 
 //ScrollView截图 contentOffset
-- (UIImage*) screenshotForScrollViewWithContentOffset:(CGPoint)contentOffset;
+- (UIImage*)screenshotForScrollViewWithContentOffset:(CGPoint)contentOffset;
 
 //View按Rect截图
-- (UIImage*) screenshotInFrame:(CGRect)frame;
+- (UIImage*)screenshotInFrame:(CGRect)frame;
 
 //整个view转成图片
-- (UIImage*) convertToImage;
+- (UIImage*)convertToImage;
 @end
 
 @interface UIView (Animation)
 
 //左右抖动动画
-- (void) shakeAnimation;
+- (void)shakeAnimation;
 
 //旋转180度
-- (void) trans180DegreeAnimation;
+- (void)trans180DegreeAnimation;
 
 @end
 
