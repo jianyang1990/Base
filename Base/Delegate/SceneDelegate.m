@@ -20,7 +20,6 @@
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     window.frame = [UIScreen mainScreen].bounds;
-//    window.rootViewController = [[MainViewController alloc] init];
     window.rootViewController = [[LoginViewController alloc] init];
     self.window = window;
     [self.window makeKeyAndVisible];
