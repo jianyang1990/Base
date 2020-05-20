@@ -14,6 +14,8 @@
 		752FF2A42465502600F57E79 /* BaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A32465502600F57E79 /* BaseNaviController.m */; };
 		752FF2A72465505100F57E79 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A62465505100F57E79 /* BaseApi.m */; };
 		752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FF2A92465527800F57E79 /* BaseTabBarController.m */; };
+		7552A9ED24750345003F5191 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7552A9EC24750345003F5191 /* User.m */; };
+		7552A9F024750704003F5191 /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7552A9EF24750704003F5191 /* LoginApi.m */; };
 		75905CBC246643A000101BDA /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CBB246643A000101BDA /* Tools.m */; };
 		75905CED2466575C00101BDA /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CBD2466575300101BDA /* NSMutableArray+Safe.m */; };
 		75905CEE2466575C00101BDA /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CC32466575400101BDA /* NSDictionary+Safe.m */; };
@@ -77,6 +79,10 @@
 		752FF2A62465505100F57E79 /* BaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApi.m; sourceTree = "<group>"; };
 		752FF2A82465527800F57E79 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		752FF2A92465527800F57E79 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		7552A9EB24750345003F5191 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7552A9EC24750345003F5191 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7552A9EE24750704003F5191 /* LoginApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
+		7552A9EF24750704003F5191 /* LoginApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
 		75849E44246A31D70060660E /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
 		75905CB8246633DF00101BDA /* SDK-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK-Header.h"; sourceTree = "<group>"; };
 		75905CBA246643A000101BDA /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
@@ -278,6 +284,33 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		7552A9E82475030B003F5191 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75AFAE16247365C700FD8F98 /* LoginViewController.h */,
+				75AFAE17247365C700FD8F98 /* LoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7552A9E924750319003F5191 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				7552A9EE24750704003F5191 /* LoginApi.h */,
+				7552A9EF24750704003F5191 /* LoginApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		7552A9EA2475031F003F5191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7552A9EB24750345003F5191 /* User.h */,
+				7552A9EC24750345003F5191 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		75A6361324653AC00074B009 = {
 			isa = PBXGroup;
 			children = (
@@ -376,8 +409,9 @@
 		75AFAE152473658300FD8F98 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				75AFAE16247365C700FD8F98 /* LoginViewController.h */,
-				75AFAE17247365C700FD8F98 /* LoginViewController.m */,
+				7552A9EA2475031F003F5191 /* Model */,
+				7552A9E924750319003F5191 /* Api */,
+				7552A9E82475030B003F5191 /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -549,6 +583,7 @@
 				75905D032466575C00101BDA /* NSDictionary+Category.m in Sources */,
 				75905CF42466575C00101BDA /* NSString+Category.m in Sources */,
 				752FF2AA2465527800F57E79 /* BaseTabBarController.m in Sources */,
+				7552A9F024750704003F5191 /* LoginApi.m in Sources */,
 				75905CFD2466575C00101BDA /* NSMutableString+Safe.m in Sources */,
 				75A6363224653AC20074B009 /* main.m in Sources */,
 				75905CF22466575C00101BDA /* NSString+Safe.m in Sources */,
@@ -569,6 +604,7 @@
 				75905D022466575C00101BDA /* NSArray+Category.m in Sources */,
 				75905CFF2466575C00101BDA /* UIMenuItem+Category.m in Sources */,
 				75905CF32466575C00101BDA /* NSString+DisplayTime.m in Sources */,
+				7552A9ED24750345003F5191 /* User.m in Sources */,
 				75A63649246543640074B009 /* MainViewController.m in Sources */,
 				75A6362424653AC10074B009 /* SceneDelegate.m in Sources */,
 				75905CF52466575C00101BDA /* UIColor+Category.m in Sources */,

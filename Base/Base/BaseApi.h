@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseApi : NSObject
+@interface BaseApi : YTKBaseRequest
+
+//参数
+@property (nonatomic, strong) NSDictionary *params;
 
 @end
 
