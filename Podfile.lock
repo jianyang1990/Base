@@ -1,19 +1,11 @@
 PODS:
-  - AFNetworking (4.0.0):
-    - AFNetworking/NSURLSession (= 4.0.0)
-    - AFNetworking/Reachability (= 4.0.0)
-    - AFNetworking/Security (= 4.0.0)
-    - AFNetworking/Serialization (= 4.0.0)
-    - AFNetworking/UIKit (= 4.0.0)
-  - AFNetworking/NSURLSession (4.0.0):
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.0)
-  - AFNetworking/Security (4.0.0)
-  - AFNetworking/Serialization (4.0.0)
-  - AFNetworking/UIKit (4.0.0):
-    - AFNetworking/NSURLSession
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
   - IQKeyboardManager (6.5.5)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
@@ -36,12 +28,13 @@ PODS:
   - SDWebImage (5.7.1):
     - SDWebImage/Core (= 5.7.1)
   - SDWebImage/Core (5.7.1)
+  - YTKNetwork (2.1.4):
+    - AFNetworking/NSURLSession (~> 3.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AFNetworking
   - IQKeyboardManager
   - Masonry
   - MBProgressHUD (~> 1.2.0)
@@ -50,6 +43,7 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - SDCycleScrollView
   - SDWebImage
+  - YTKNetwork
   - YYKit
 
 SPEC REPOS:
@@ -63,10 +57,11 @@ SPEC REPOS:
     - pop
     - SDCycleScrollView
     - SDWebImage
+    - YTKNetwork
     - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -75,8 +70,9 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 5d4cf6afccd9ac1d2ee701ed0c4917cbb1b80536
+  YTKNetwork: 19be749c30f0512ada07180f4637b4b67bc8ddc2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a59cc32a6988c16f92487a0f2af3e4fe447443a6
+PODFILE CHECKSUM: e23b3a4fa9d1c9233d9283d9812dd9c825b1b594
 
 COCOAPODS: 1.9.1

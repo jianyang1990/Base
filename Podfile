@@ -11,10 +11,10 @@ target 'Base' do
    pod 'SDCycleScrollView'
    pod 'Masonry'
    pod 'MMDrawerController'
-   pod 'AFNetworking'
    pod 'YYKit'
    pod 'MBProgressHUD', '~> 1.2.0'
    pod 'pop', '~> 1.0'
+   pod 'YTKNetwork'
 
 end
 
