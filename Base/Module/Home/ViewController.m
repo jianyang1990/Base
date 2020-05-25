@@ -19,5 +19,15 @@
     self.view.backgroundColor = RandomColor;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (kFetchMyDefault(@"token")) {
+        NSLog(@"已登录");
+    }else {
+        NSLog(@"未登陆");
+    }
+}
+
 
 @end

@@ -10,8 +10,12 @@
 #define PrefixHeader_pch
 
 //头文件
-#import "SDK-Header.h"
+#import "UtilsMacros.h"
+#import "CommonMacros.h"
+#import "FontColorMacros.h"
+#import "ThirdMacros.h"
 #import "CategoryHeader.h"
+#import "Tools.h"
 
 //打印
 #ifdef DEBUG

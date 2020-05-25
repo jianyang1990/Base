@@ -122,6 +122,10 @@
 */
 - (void)login {
     
+    if (self.name.length == 0 || self.password.length == 0) {
+       return [Tools globalTipsVC:self tips:@"请输入正确的用户名和密码"];
+    }
+    
     LoginApi *api = [[LoginApi alloc] initWithPhone:self.name AndPassword:self.password];
     [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *_Nonnull request) {
         

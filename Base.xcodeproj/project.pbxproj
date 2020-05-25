@@ -41,7 +41,6 @@
 		75905D032466575C00101BDA /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CEA2466575C00101BDA /* NSDictionary+Category.m */; };
 		75905D042466575C00101BDA /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 75905CEB2466575C00101BDA /* UIImage+Category.m */; };
 		75A6362124653AC10074B009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362024653AC10074B009 /* AppDelegate.m */; };
-		75A6362424653AC10074B009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362324653AC10074B009 /* SceneDelegate.m */; };
 		75A6362724653AC10074B009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6362624653AC10074B009 /* ViewController.m */; };
 		75A6362A24653AC10074B009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A6362824653AC10074B009 /* Main.storyboard */; };
 		75A6362C24653AC20074B009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A6362B24653AC20074B009 /* Assets.xcassets */; };
@@ -64,7 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		752FF28F24654E0600F57E79 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		752FF28F24654E0600F57E79 /* Mobile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mobile.pch; sourceTree = "<group>"; };
 		752FF29624654FD800F57E79 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		752FF29724654FD800F57E79 /* Const.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
 		752FF29924654FF400F57E79 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -84,7 +83,7 @@
 		7552A9EE24750704003F5191 /* LoginApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
 		7552A9EF24750704003F5191 /* LoginApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
 		75849E44246A31D70060660E /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
-		75905CB8246633DF00101BDA /* SDK-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK-Header.h"; sourceTree = "<group>"; };
+		75905CB8246633DF00101BDA /* ThirdMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdMacros.h; sourceTree = "<group>"; };
 		75905CBA246643A000101BDA /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		75905CBB246643A000101BDA /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		75905CBD2466575300101BDA /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
@@ -136,8 +135,6 @@
 		75A6361C24653AC00074B009 /* Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Base.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A6361F24653AC10074B009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A6362024653AC10074B009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75A6362224653AC10074B009 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		75A6362324653AC10074B009 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		75A6362524653AC10074B009 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		75A6362624653AC10074B009 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		75A6362924653AC10074B009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +152,9 @@
 		918662365F01CF81A0787B5A /* Pods-Base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.release.xcconfig"; path = "Target Support Files/Pods-Base/Pods-Base.release.xcconfig"; sourceTree = "<group>"; };
 		97F2D7F539327746E1B7CE7B /* Pods-Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.debug.xcconfig"; path = "Target Support Files/Pods-Base/Pods-Base.debug.xcconfig"; sourceTree = "<group>"; };
 		ABB21BE3522D68FA42E64DC9 /* libPods-Base.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Base.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7283336247B672200801D60 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		C7283337247B673E00801D60 /* FontColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontColorMacros.h; sourceTree = "<group>"; };
+		C7283338247B67A100801D60 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,13 +275,18 @@
 			path = Third;
 			sourceTree = "<group>";
 		};
-		752FF29524654FA000F57E79 /* Common */ = {
+		752FF29524654FA000F57E79 /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				752FF28F24654E0600F57E79 /* Mobile.pch */,
+				C7283338247B67A100801D60 /* UtilsMacros.h */,
+				C7283336247B672200801D60 /* CommonMacros.h */,
+				C7283337247B673E00801D60 /* FontColorMacros.h */,
+				75905CB8246633DF00101BDA /* ThirdMacros.h */,
 				752FF29624654FD800F57E79 /* Const.h */,
 				752FF29724654FD800F57E79 /* Const.m */,
 			);
-			path = Common;
+			path = Define;
 			sourceTree = "<group>";
 		};
 		7552A9E82475030B003F5191 /* Controller */ = {
@@ -337,7 +342,7 @@
 				75A6364C2465478E0074B009 /* Base */,
 				75A6364B246547800074B009 /* Delegate */,
 				752FF29024654F1D00F57E79 /* Module */,
-				752FF29524654FA000F57E79 /* Common */,
+				752FF29524654FA000F57E79 /* Define */,
 				75A63646246542CB0074B009 /* Resource */,
 				752FF29224654F6300F57E79 /* Tools */,
 			);
@@ -361,8 +366,6 @@
 				75A6362B24653AC20074B009 /* Assets.xcassets */,
 				75A6362D24653AC20074B009 /* LaunchScreen.storyboard */,
 				75A6363024653AC20074B009 /* Info.plist */,
-				752FF28F24654E0600F57E79 /* PrefixHeader.pch */,
-				75905CB8246633DF00101BDA /* SDK-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -381,8 +384,6 @@
 			children = (
 				75A6361F24653AC10074B009 /* AppDelegate.h */,
 				75A6362024653AC10074B009 /* AppDelegate.m */,
-				75A6362224653AC10074B009 /* SceneDelegate.h */,
-				75A6362324653AC10074B009 /* SceneDelegate.m */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -409,8 +410,8 @@
 		75AFAE152473658300FD8F98 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7552A9EA2475031F003F5191 /* Model */,
 				7552A9E924750319003F5191 /* Api */,
+				7552A9EA2475031F003F5191 /* Model */,
 				7552A9E82475030B003F5191 /* Controller */,
 			);
 			path = Login;
@@ -606,7 +607,6 @@
 				75905CF32466575C00101BDA /* NSString+DisplayTime.m in Sources */,
 				7552A9ED24750345003F5191 /* User.m in Sources */,
 				75A63649246543640074B009 /* MainViewController.m in Sources */,
-				75A6362424653AC10074B009 /* SceneDelegate.m in Sources */,
 				75905CF52466575C00101BDA /* UIColor+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,7 +766,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUS6KH58YG;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Base/Resource/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Base/Define/Mobile.pch";
 				INFOPLIST_FILE = Base/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -786,7 +786,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUS6KH58YG;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Base/Resource/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Base/Define/Mobile.pch";
 				INFOPLIST_FILE = Base/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
