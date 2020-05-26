@@ -49,6 +49,7 @@
 		75A6363C24653AC20074B009 /* BaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6363B24653AC20074B009 /* BaseTests.m */; };
 		75A63649246543640074B009 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A63648246543640074B009 /* MainViewController.m */; };
 		75AFAE18247365C700FD8F98 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AFAE17247365C700FD8F98 /* LoginViewController.m */; };
+		C701E853247CA57A00DD4867 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C701E852247CA57A00DD4867 /* Login.storyboard */; };
 		C7400E7D255643CB9F20D6EE /* libPods-Base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB21BE3522D68FA42E64DC9 /* libPods-Base.a */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +153,7 @@
 		918662365F01CF81A0787B5A /* Pods-Base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.release.xcconfig"; path = "Target Support Files/Pods-Base/Pods-Base.release.xcconfig"; sourceTree = "<group>"; };
 		97F2D7F539327746E1B7CE7B /* Pods-Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base.debug.xcconfig"; path = "Target Support Files/Pods-Base/Pods-Base.debug.xcconfig"; sourceTree = "<group>"; };
 		ABB21BE3522D68FA42E64DC9 /* libPods-Base.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Base.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C701E852247CA57A00DD4867 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C7283336247B672200801D60 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		C7283337247B673E00801D60 /* FontColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontColorMacros.h; sourceTree = "<group>"; };
 		C7283338247B67A100801D60 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 		7552A9E82475030B003F5191 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C701E852247CA57A00DD4867 /* Login.storyboard */,
 				75AFAE16247365C700FD8F98 /* LoginViewController.h */,
 				75AFAE17247365C700FD8F98 /* LoginViewController.m */,
 			);
@@ -508,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C701E853247CA57A00DD4867 /* Login.storyboard in Resources */,
 				75A6362F24653AC20074B009 /* LaunchScreen.storyboard in Resources */,
 				75A6362C24653AC20074B009 /* Assets.xcassets in Resources */,
 				75A6362A24653AC10074B009 /* Main.storyboard in Resources */,

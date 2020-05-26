@@ -27,13 +27,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self setupUI];
+//    [self setupUI];
 }
 
 #pragma mark - Private Methods
 
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self.view addSubview:({
         self.nameLabel = [[UILabel alloc] init];
         self.nameLabel.text = @"用户名";
@@ -121,17 +122,15 @@
 登录按钮点击
 */
 - (void)login {
-    
     if (self.name.length == 0 || self.password.length == 0) {
-       return [Tools globalTipsVC:self tips:@"请输入正确的用户名和密码"];
+        return [Tools globalTipsVC:self tips:@"请输入正确的用户名和密码"];
     }
-    
+
     LoginApi *api = [[LoginApi alloc] initWithPhone:self.name AndPassword:self.password];
     [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *_Nonnull request) {
-        
         //保存用户信息
         [(LoginApi *)request saveUserInfo];
-        
+
         //跳转首页
         UIWindow *keyWindow;
         if (@available(iOS 13.0, *)) {
@@ -142,7 +141,6 @@
         keyWindow.rootViewController = [[MainViewController alloc] init];
         [keyWindow makeKeyAndVisible];
     } failure:^(__kindof YTKBaseRequest *_Nonnull request) {
-        
     }];
 }
 

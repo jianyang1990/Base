@@ -15,13 +15,10 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFeneinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions {
     [self setWindow:[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds]];
-    [self.window setRootViewController:[[LoginViewController alloc] init]];
+    [self.window setRootViewController:[Tools vcFromStoryboardWithName:@"Login" identifier:@"LoginViewController"]];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
